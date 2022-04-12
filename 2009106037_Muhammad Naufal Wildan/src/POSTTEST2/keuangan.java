@@ -20,7 +20,7 @@ public class keuangan {
     }
     
     void ditolak(){
-        sout
+        System.out.println("Anggaran Ditolak");
     }
     
 }

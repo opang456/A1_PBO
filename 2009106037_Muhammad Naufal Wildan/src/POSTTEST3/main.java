@@ -1,5 +1,4 @@
-
-package POSTTEST2;
+package POSTTEST3;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -39,26 +38,21 @@ public class main {
                 System.out.println("Instansi telah ditambahkan!");
             } else if(menu == 2) {
                 System.out.println("===== Lihat Instansi =====");
-                keuangan instansi1 = new keuangan("Sekretariat daerah",40000000,30000000,70000000,80000000);
-                keuangan instansi2 = new keuangan("Inspektorat",50000000,3000000,60000000,70000000);
+                keuangan instansi1 = new keuangan();
+                keuangan instansi2 = new keuangan();
+                
+                instansi1.bikin("Sekretariat_daerah", 70000000, 50000000, 100000000, 150000000);
+                instansi2.bikin("Inspektorat", 50000000, 30000000, 70000000, 100000000);
                 
                 System.out.println("===============================================");
                 System.out.println("Nomor Instansi    : " + 1);
-                System.out.println("Nama Instansi     : " + instansi1.nama_instansi);
-                System.out.println("Anggaran Masuk    : " + instansi1.anggaran_masuk);
-                System.out.println("Anggaran Keluar   : " + instansi1.anggaran_keluar);
-                System.out.println("Anggaran Perbulan : " + instansi1.anggaran_perbulan);
-                System.out.println("Anggaran Pertahun : " + instansi1.anggaran_pertahun);
+                instansi1.tampil();
                 instansi1.diterima();
                 System.out.println("==============================================="); 
 
                 System.out.println("===============================================");
                 System.out.println("Nomor Instansi    : " + 2);
-                System.out.println("Nama Instansi     : " + instansi2.nama_instansi);
-                System.out.println("Anggaran Masuk    : " + instansi2.anggaran_masuk);
-                System.out.println("Anggaran Keluar   : " + instansi2.anggaran_keluar);
-                System.out.println("Anggaran Perbulan : " + instansi2.anggaran_perbulan);
-                System.out.println("Anggaran Pertahun : " + instansi2.anggaran_pertahun);
+                instansi2.tampil();
                 instansi2.ditolak();
                 
                 System.out.println("==============================================="); 
